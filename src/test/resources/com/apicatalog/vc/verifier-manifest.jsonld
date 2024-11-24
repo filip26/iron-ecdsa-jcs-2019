@@ -26,6 +26,24 @@
       ],
       "name": "W3C P-384 Test Vector",
       "input": "verifier/vcdm20-ecdsa-jcs-2022-p384.jsonld"
-    }
+    },
+    {
+      "@id": "#t0003",
+      "@type": [
+        "PositiveEvaluationTest",
+        "VeriferTest"
+      ],
+      "name": "VCDM1.1 P-256",
+      "input": "verifier/vcdm11-ecdsa-jcs-2022-p256.jsonld"
+    },
+    {
+      "@id": "#t0004",
+      "@type": [
+        "PositiveEvaluationTest",
+        "VeriferTest"
+      ],
+      "name": "VCDM1.1 P-384",
+      "input": "verifier/vcdm11-ecdsa-jcs-2022-p384.jsonld"
+    }    
   ]
 }

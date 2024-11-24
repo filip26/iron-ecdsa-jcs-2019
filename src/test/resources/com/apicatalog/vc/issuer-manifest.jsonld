@@ -38,6 +38,36 @@
         "verificationMethod": "did:key:z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ#z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ",
         "created": "2023-02-24T23:36:38Z"
       }
-    }    
+    },
+    {
+      "@id": "#t0003",
+      "@type": [
+        "PositiveEvaluationTest",
+        "IssuerTest"
+      ],
+      "name": "VCDM1.1 P-256",
+      "input": "issuer/vcdm11-unsigned.jsonld",
+      "expect": "verifier/vcdm11-ecdsa-jcs-2022-p256.jsonld",
+      "options": {
+        "keyPair": "issuer/keypair-ecdsa-p256.jsonld",
+        "verificationMethod": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
+        "created": "2023-02-24T23:36:38Z"
+      }
+    },
+    {
+      "@id": "#t0004",
+      "@type": [
+        "PositiveEvaluationTest",
+        "IssuerTest"
+      ],
+      "name": "VCDM1.1 P-384",
+      "input": "issuer/vcdm11-unsigned.jsonld",
+      "expect": "verifier/vcdm11-ecdsa-jcs-2022-p384.jsonld",
+      "options": {
+        "keyPair": "issuer/keypair-ecdsa-p384.jsonld",
+        "verificationMethod": "did:key:z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ#z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ",
+        "created": "2023-02-24T23:36:38Z"
+      }
+    }
   ]
 }
