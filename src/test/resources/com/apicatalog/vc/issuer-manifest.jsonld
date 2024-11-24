@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "context.jsonld",
+    {
+      "@base": "issuer-manifest"
+    }
+  ],
+  "@id": "",
+  "@type": "mf:Manifest",
+  "name": "Verifiable Credentials Issuer Test Suite",
+  "sequence": [
+    {
+      "@id": "#t0001",
+      "@type": [
+        "PositiveEvaluationTest",
+        "IssuerTest"
+      ],
+      "name": "W3C P-256 Test Vector",
+      "input": "issuer/vcdm20-unsigned.jsonld",
+      "expect": "verifier/vcdm20-ecdsa-jcs-2022-p256.jsonld",
+      "options": {
+        "keyPair": "issuer/keypair-ecdsa-p256.jsonld",
+        "verificationMethod": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
+        "created": "2023-02-24T23:36:38Z"
+      }
+    },
+    {
+      "@id": "#t0002",
+      "@type": [
+        "PositiveEvaluationTest",
+        "IssuerTest"
+      ],
+      "name": "W3C P-384 Test Vector",
+      "input": "issuer/vcdm20-unsigned.jsonld",
+      "expect": "verifier/vcdm20-ecdsa-jcs-2022-p384.jsonld",
+      "options": {
+        "keyPair": "issuer/keypair-ecdsa-p384.jsonld",
+        "verificationMethod": "did:key:z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ#z82LkuBieyGShVBhvtE2zoiD6Kma4tJGFtkAhxR5pfkp5QPw4LutoYWhvQCnGjdVn14kujQ",
+        "created": "2023-02-24T23:36:38Z"
+      }
+    }    
+  ]
+}
